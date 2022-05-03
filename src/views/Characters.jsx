@@ -17,6 +17,7 @@ export default function Characters() {
 
   return (
     <>
+    <h1>Rick and Morty Characters</h1>
     {
       isLoading ? <p>Loading...</p>
       : (
