@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Characters() {
 
@@ -24,9 +25,11 @@ export default function Characters() {
         {
           characters.map((character) => {
             return (
-              <article key={character.id}>
-                <li>{character.name}</li>
-              </article>
+              <Link to={`/character/${character.id}`}>
+                <article key={character.id}>
+                  <li>{character.name}</li>
+                </article>
+              </Link>
             )
           })
         }
