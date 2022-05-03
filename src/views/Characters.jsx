@@ -25,11 +25,11 @@ export default function Characters() {
         {
           characters.map((character) => {
             return (
+                <div key={character.id}>
               <Link to={`/character/${character.id}`}>
-                <article key={character.id}>
                   <li>{character.name}</li>
-                </article>
               </Link>
+                </div>
             )
           })
         }
