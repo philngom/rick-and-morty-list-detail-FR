@@ -22,8 +22,8 @@ export default function Character() {
       isLoading ? <p>Loading...</p>
       : (
         <>
-        <h2>{character.name}</h2>
-        <img src={character.image}></img>
+          <h2>{character.name}</h2>
+          <img src={character.image}></img>
         </>
       )
     }
